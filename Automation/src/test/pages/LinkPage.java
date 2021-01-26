@@ -8,6 +8,6 @@ public class LinkPage {
   private WebElement titulo;
   
   public String textPage() {
-	  return titulo.getText();
+    return titulo.getText();
   }
 }

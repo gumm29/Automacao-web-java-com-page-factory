@@ -3,40 +3,44 @@
   <groupId>Automation</groupId>
   <artifactId>Automation</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+  </properties>
+
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.11</version>
+      <scope>test</scope>
     </dependency>
 
-    <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>
       <version>3.141.59</version>
+      <scope>test</scope>
     </dependency>
 
-    <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
     <dependency>
       <groupId>info.cukes</groupId>
       <artifactId>cucumber-java</artifactId>
       <version>1.2.5</version>
-      <!-- <scope>test</scope> -->
+      <scope>test</scope>
     </dependency>
 
-    <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
     <dependency>
       <groupId>info.cukes</groupId>
       <artifactId>cucumber-junit</artifactId>
       <version>1.2.5</version>
+      <scope>test</scope>
     </dependency>
 
   </dependencies>
 
   <build>
-    <sourceDirectory>src</sourceDirectory>
+    <testSourceDirectory>src/test/</testSourceDirectory>
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>

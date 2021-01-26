@@ -8,6 +8,6 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
   glue="stepDefinition",
-  features="src/spec/BuscaGoogle.feature"
+  features="src/test/spec/BuscaGoogle.feature"
 )
-public class Main {}
+public class runTest {}

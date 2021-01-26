@@ -35,8 +35,8 @@ public class BuscaGoogle extends SetUp{
 
   @Entao("valido a busca")
   public void valido_a_busca() throws Throwable {
-	  page = PageFactory.initElements(driver, LinkPage.class);
-	  assertTrue(page.textPage().contains("Software"));
-	  driver.close();
+    page = PageFactory.initElements(driver, LinkPage.class);
+    assertTrue(page.textPage().contains("Software"));
+    driver.close();
   }
 }

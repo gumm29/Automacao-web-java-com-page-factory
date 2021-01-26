@@ -1,7 +1,7 @@
 # language: pt
 Funcionalidade: Fazer busca no google e acessar o primeiro link
 
-  Cenario: 
+  Cenario:
     Dado que acesso o site
     Quando pesquiso por "teste de software"
     E clico no primeiro link
